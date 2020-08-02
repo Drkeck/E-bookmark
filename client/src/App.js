@@ -1,10 +1,25 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import ApolloClient from 'apollo-boost'
 import SearchBooks from './pages/SearchBooks';
 import SavedBooks from './pages/SavedBooks';
 import Navbar from './components/Navbar';
 
 function App() {
+
+  const client = new ApolloClient({
+    request: operation => {
+      const token = localStorage.getItem('id_token');
+
+      operation.setContext({
+        headers: {
+          authorization: token ? `Bearer ${token}` : ''
+        }
+      });
+    },
+    uri: '/graphql'
+  });
+
   return (
     <Router>
       <>
