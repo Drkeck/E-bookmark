@@ -9,5 +9,5 @@ im glad i got to learn and use graphql more but it feels like theres so much mor
 
 ## about me:
 
-Hi i am Alex ["Drkeck"](https://github.com/drkeck) Keckly, i am a student and a avid learner of Full stack development!
+Hi i am Alex ["Drkeck"](https://github.com/drkeck) Keckley, i am a student and a avid learner of Full stack development!
 feel free to contact at `K3ckley.a@gmail.com` or visit my github to see what other projects i have under my belt, i hope i don't dissapoint!
