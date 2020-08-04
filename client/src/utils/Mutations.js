@@ -48,8 +48,12 @@ mutation removeBook($bookId: String!) {
       title
       bookId
       description
+      authors
+      image
+      link
     }
     username
+    bookCount
   }
 }
 `;
